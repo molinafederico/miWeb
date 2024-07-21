@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 export default function DatosContacto(props) {
   return (
     <div className="container-info-contacto">

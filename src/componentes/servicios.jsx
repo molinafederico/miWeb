@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 import BtnLeerMas from "./btnLeerMas";
 
-
-
 const Servicios = () => {
 
     return (
@@ -55,14 +53,9 @@ const Servicios = () => {
      icono={<FontAwesomeIcon icon={faHouseCircleCheck} />}
     titulo="COSTO CONTROLADO"
      parrafo="Nuestro sistema de costos es medible y sin variaciones, esto nos permite construir hogares en tiempos precisos y valores fijos con altos estándares de calidad y resultados de excelencia" 
-     leerMas={ <BtnLeerMas/>}
-     
+     leerMas={ <BtnLeerMas/>} 
   />
-  
-  
   </div>
-
-       
       <Footer/>
      </React.Fragment>
     )

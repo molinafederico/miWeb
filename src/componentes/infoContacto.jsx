@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function InfoContacto(props) {
   return (
     <div class="container-info">

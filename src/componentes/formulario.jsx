@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export default function Formulario() {
   return (
     <div className="container-form"> 
@@ -13,7 +12,6 @@ export default function Formulario() {
         <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje (opcional)" cols="23" rows="3" className="form-input" autocomplete="off"></textarea>
         <input type="submit" className="enviar form-input"/>
         </form>
-   
         </div>
         )
 }
