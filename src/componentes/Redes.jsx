@@ -7,9 +7,9 @@ import instagram from "../img/instagram.svg"
       return (
         <React.Fragment>
         <div class="redes-footer">
-        <a target="_blank" href="https://www.facebook.com/?locale=es_LA"><img src={face} alt="logo_facebook"/></a>
-        <a target="_blank" href="https://www.instagram.com/"><img src={instagram} alt="logo_instagram"/></a>
-        <a target="_blank" href="https://ar.linkedin.com/"><img src={likedin} alt="logo_linkedin"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/?locale=es_LA"><img src={face} alt="logo_facebook"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src={instagram} alt="logo_instagram"/></a>
+        <a target="_blank" rel="noreferrer" href="https://ar.linkedin.com/"><img src={likedin} alt="logo_linkedin"/></a>
        </div>
        </React.Fragment>
       )
