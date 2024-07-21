@@ -1,0 +1,451 @@
+
+/* importo fuentes de google-fonts */
+
+@import url('https://fonts.googleapis.com/css2i?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* quito margenes del navegador por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* ------estilos header------------- */
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 15px -5px black ;
+    z-index: 2;
+}
+header h1 {
+    color: rgb(49, 156, 233) ;
+}
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 29px;
+    border-radius: 4px;
+}
+.logo img:hover{
+    transform: scale(1.5);
+}
+.menu{
+    /* mismo alto que el header */
+    height: 70px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu nav ul li a{
+    text-decoration: none;
+}
+/* dibujo una linea debajo de los botones del menu */
+.menu-seleccionado::before{
+   content: "";
+   width: 100%;
+   height: 4px;
+   background-color: rgb(94, 182, 245);
+   /* para que se posicione en relacion a la li */
+   position: absolute; 
+   bottom: 15px;
+   left: 0;
+}
+.menu nav ul li a{
+    color: #777777;
+}
+.menu nav ul li a:hover{
+    color:rgb(94, 182, 245) ;
+}
+.menu .texto-menu-selecionado{
+    color: rgb(94, 182, 245) ;
+}
+/* ----menu responsive---- */
+.nav-label {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+  }
+  .nav-label:hover{
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .nav-input{
+    display: none;
+  } 
+/* --------portada---------- */
+.container-portada{
+    width: 100%;
+    height: 400px;
+    position: relative;
+   margin-top:  70px;
+    background-image:url(../img/edificios.jpg);
+    /* centro la img de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-info-portada{
+    max-width: 800px;
+    /* mismo alto que su padre  */
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-info-portada h2{
+    font-family: "Source Code Pro", monospace;
+    background-color:rgba(255, 255, 255,0.4);
+   border-radius: 10px;
+    color:#000;
+    margin-bottom: 40px;
+    font-size: 2.5em;  
+}
+/* ---------------contenido del articulo-------------- */
+.container-articulo {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -15px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+article::before{
+    content:"" ;
+    width: 100%;
+    height: 6px;
+    background-color: #777777;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+article h2{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2.5em;
+    font-family: "Source Code Pro", monospace;
+}
+article p{
+    /* espaciado entre parrafos, color, y tamaño */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #3c3c3c;
+}
+article img {
+    width: 100%;
+    margin-top: 20px;
+}
+/* ------aside--------- */
+.container-aside aside{
+    border: #000 solid;
+    width: 320px;
+    border-right: 6px;
+    box-shadow: -10px 0 20px -15px black;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.container-aside aside  img{
+    width: 100%;
+}
+.container-aside aside h2, .container-aside aside p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+/* -----pie de pagina----- */
+.container-footer footer{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 40px;
+    background-color: #777777;
+}
+.redes-footer {
+    /* margen entre los iconos */
+   margin: 0 20px;
+}
+.redes-footer img{
+    width: 40px;
+}
+/* -------------portada otras pestañas-------- */
+.container-portada-contacto{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-top:  70px;
+    background-image:url(../img/edificios.jpg);
+    /* centro la img de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ---info pestaña contacto--- */
+.container-info-portada-contacto{
+    max-width: 100%;
+    /* mismo alto que su padre  */
+     height: 400px;
+     margin: auto;
+     text-align: start;
+     display: flex;
+     justify-content: end;
+     align-items:flex-end ;
+     justify-content: left; 
+ }
+/* ---estilo portada contacto---- */
+.container-portada-contacto::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255,255,255,2));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.container-info-portada-contacto h2{
+    font-family: "Source Code Pro", monospace;
+    z-index: 1;
+   border-radius: 10px;
+    color:black;
+    margin-bottom: 40px;
+    font-size: 2.5em;  
+} 
+.container-contacto{
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+.container-contacto h2, b{
+    color:rgb(94, 182, 245)  ;
+    margin-bottom: 5px;
+}
+.parrafo_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 100px;
+    gap: 15px;
+    width: 300px;
+}
+/* ----datos de la empresa--- */
+.container-info{
+    margin: 0 10px;
+}
+.container-info-contacto{
+    margin: 0 10px;
+}
+/* ----estilos del formulario----- */
+.container-form{
+    margin: 0 10px;
+    display: grid;
+    justify-content: flex-start;
+    gap: 10px;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    background-color: burlywood;
+}
+.form-input {
+    font-size:16px;
+    margin: 15px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    resize: none;
+    border: none;
+}
+.enviar{
+    background-color:rgb(156, 191, 213);
+}
+.enviar:hover{
+    background-color: dodgerblue;
+}
+.enviar:active{
+    background-color: #777777;
+}
+/* ----estilos pestaña servicios------- */
+.container-info-portada-servicios h2{
+    font-family: "Source Code Pro", monospace;
+    z-index: 1;
+    border-radius: 10px;
+    color:black;
+    margin-bottom: 40px;
+    font-size: 2.5em;  
+}
+.container-info-portada-servicios{
+    max-width: 100%;
+    /* mismo alto que su padre  */
+    height: 400px;
+    margin: auto;
+    text-align: start;
+    display: flex;
+    justify-content: end;
+    align-items:flex-end ;
+    justify-content: left; 
+}
+.container-servicios{
+    margin: 0 20px;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px; 
+}
+.logo-servicio{
+    font-size: 24px;
+}
+.servicio p{
+    color: #777777; 
+}
+/* ------------estilos proyectos--------- */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-item{
+    position: relative;
+}
+.titulo-img{
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,5));
+}
+   /* ------media queris----- */
+   @media  screen and (max-width: 1220px){
+    .header-content, .container-articulo, .container-foote footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    .container-contacto {
+        display: grid;
+        grid-template-rows: 1fr, 1fr, 2fr;
+    }}
+   @media  screen and (max-width: 1020px){
+    .container-articulo{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container-contacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } }
+   @media  screen and (max-width: 860px){
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+    /* -----------menu hamburguesa----------- */
+    .nav-label{
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: 70px;
+        left: -120%;
+        background-color: white;
+        box-shadow: 0 4px 25px -5px black ;
+        margin: 0;
+    }
+    .menu nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0;
+        width: 100%;
+    }
+    .nav-input:checked + .menu {
+       left:  0;
+       transition: all 0.8s;  
+    }}
+/* ------media quiery servicios--- */
+@media  screen and (max-width: 900px){
+    .container-servicios, .galeria-container{
+        grid-template-columns: repeat(2, 1fr) ;
+    }}
+@media  screen and (max-width: 800px){
+    .container-servicios {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .container-aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }}
+/* ---------media quiery proyectos----- */
+@media  screen and (max-width: 600px){
+    .galeria-container{
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .container-footer footer{
+        flex-direction: column;
+    }
+    .menu{
+    width: 100%;
+    }}   
+@media  screen and (max-width: 450px){
+   .header-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+   }}
