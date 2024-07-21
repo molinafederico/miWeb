@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import "./estilos.css"
 import React from "react";
 import ArtService from "./artService"
-import { faCity, faHandshake, faHouseCircleCheck, faHouseUser, faUser, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faCity, faHandshake, faHouseCircleCheck, faHouseUser, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 import BtnLeerMas from "./btnLeerMas";

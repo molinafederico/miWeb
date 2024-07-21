@@ -1,6 +1,6 @@
 import mf from "../img/mf.jpg"
 import menu from "../img/menu.svg"
-import React, { useRef, useState } from "react"
+import React, { useRef,} from "react"
 import "./estilos.css"
 import { Link, Outlet } from "react-router-dom"
 
