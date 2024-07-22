@@ -368,7 +368,7 @@ form{
 }
    /* ------media queris----- */
    @media  screen and (max-width: 1220px){
-    .header-content, .container-articulo, .container-foote footer{
+    .header-content, .container-articulo, .container-contacto, .container-foote footer{
         max-width: 1000px;
         padding: 0 20px;
     }
@@ -442,10 +442,10 @@ form{
     .menu{
     width: 100%;
     }}   
-@media  screen and (max-width: 450px){
+@media  screen and (max-width: 550px){
    .header-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
    }}

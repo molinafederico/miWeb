@@ -3,6 +3,7 @@ import Portada from "./Portada"
 import Footer from "./Footer"
 import React from "react";
 import Data from "./data.jsx"
+import "./estilos.css"
 const Contacto = () => {
 
     return (

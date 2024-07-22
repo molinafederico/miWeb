@@ -29,7 +29,7 @@ const MenuNav = (props) => {
                     <li className={props.classLiHome}><Link className={props.classLinkHome} to="/" onClick={manejarLink}>HOME</Link></li>
                     <li className={props.classLiProyect}><Link className={props.classLinkproyect} to="/proyectos" onClick={manejarLink}>PROYECTOS</Link></li>
                     <li className={props.classLiService}><Link className={props.classLinService} to="/servicios" onClick={manejarLink}>SERVICIOS</Link></li>
-                    <li className={props.classLiContact}><Link className={props.classLinkContact} to="/contacto" onClick={manejarLink}>CONTACTO</Link></li>
+                    <li className={props.classLiContact}><Link className={props.classLinkContact} to="/*" onClick={manejarLink}>CONTACTO</Link></li>
                 </ul>
             </nav>
         </div>   
